@@ -23,3 +23,11 @@ SELECT "customers", count("orders"."id") AS "order count" FROM "customers"
 JOIN "addresses" ON "addresses"."customer_id" = "customers"."id"
 JOIN "orders" ON "orders"."address_id" = "addresses"."id"
 GROUP BY "customers";
+
+-- How many customers do we have?
+SELECT count(*) FROM "customers";
+
+--How many products do we carry?
+SELECT count(*) FROM "products";
+
+
